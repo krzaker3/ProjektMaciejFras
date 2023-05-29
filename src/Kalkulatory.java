@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Kalkulatory extends SklepKomputerowy {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        //
+        //wypisanie wszystkich programów
         System.out.println("Witaj w projekcie zaliczeniowym !");
         System.out.println("Wybierz program do uruchomienia: ");
         System.out.println("1) Kalkulator prosty");
@@ -10,7 +10,7 @@ public class Kalkulatory extends SklepKomputerowy {
         System.out.println("3) Kalkulator PIT");
         System.out.println("4) Kalkulator miejsc zerowych funkcji kwadratowej");
         System.out.println("5) Sklep komputerowy");
-
+        //wybór programu do wykonania
         int wybor = input.nextInt();
         switch (wybor) {
             case 1:
@@ -103,7 +103,7 @@ class KalkulatorWalut {
 
         double przeliczonaKwota = 0;
 
-        // Przeliczanie polskiego złotego na inne waluty
+        //przeliczanie polskiego złotego na inne waluty
         if (walutaZrodlowa == 1) {
             if (walutaDocelowa == 2) {
                 przeliczonaKwota = kwota / 4.5; // Kurs Euro do PLN
@@ -115,7 +115,7 @@ class KalkulatorWalut {
             }
         }
 
-        // Przeliczanie euro na inne waluty
+        //przeliczanie euro na inne waluty
         else if (walutaZrodlowa == 2) {
             if (walutaDocelowa == 1) {
                 przeliczonaKwota = kwota * 4.5; // Kurs PLN do Euro
@@ -127,7 +127,7 @@ class KalkulatorWalut {
             }
         }
 
-        // Przeliczanie dolarów na inne waluty
+        //przeliczanie dolarów na inne waluty
         else if (walutaZrodlowa == 3) {
             if (walutaDocelowa == 1) {
                 przeliczonaKwota = kwota * 3.8; // Kurs PLN do Dolar

@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class SklepKomputerowy {
     public void main() {
         Scanner input = new Scanner(System.in);
-
+        //wypisanie wszystkich możliwych kategori
         System.out.println("Witaj w sklepie komputerowym!");
         System.out.println("Dostępne komponenty:");
         System.out.println("1) Procesor");
@@ -112,74 +112,74 @@ public class SklepKomputerowy {
         }
         return "";
     }
-
+    //mapy przechowywujące modele i ceny danych podzespołów
     private static Map<String, Double> przygotujModeleProcesorow() {
         Map<String, Double> modeleProcesorow = new HashMap<>();
-        modeleProcesorow.put("Procesor A", 1000.0);
-        modeleProcesorow.put("Procesor B", 1200.0);
-        modeleProcesorow.put("Procesor C", 900.0);
-        modeleProcesorow.put("Procesor D", 1100.0);
-        modeleProcesorow.put("Procesor E", 950.0);
+        modeleProcesorow.put("AMD Ryzen 5 5600", 619.0);
+        modeleProcesorow.put("Intel Core i5-12400F", 729.0);
+        modeleProcesorow.put("AMD Ryzen 7 5700X", 879.0);
+        modeleProcesorow.put("Intel Core i5-13600KF", 1399.0);
+        modeleProcesorow.put("Intel Core i7-13700K", 1949.0);
         return modeleProcesorow;
     }
 
     private static Map<String, Double> przygotujModelePlytGlownych() {
         Map<String, Double> modelePlytGlownych = new HashMap<>();
-        modelePlytGlownych.put("Płyta A", 500.0);
-        modelePlytGlownych.put("Płyta B", 550.0);
-        modelePlytGlownych.put("Płyta C", 600.0);
-        modelePlytGlownych.put("Płyta D", 450.0);
-        modelePlytGlownych.put("Płyta E", 520.0);
+        modelePlytGlownych.put("Gigabyte B550 GAMING X V2", 509.0);
+        modelePlytGlownych.put("ASUS PRIME B760M-A WIFI DDR4", 769.0);
+        modelePlytGlownych.put("Gigabyte B760 GAMING X DDR4", 699.0);
+        modelePlytGlownych.put("Gigabyte Z790 AORUS ELITE AX", 1399.0);
+        modelePlytGlownych.put("MSI B550 GAMING GEN3", 489.0);
         return modelePlytGlownych;
     }
 
     private static Map<String, Double> przygotujModeleRam() {
         Map<String, Double> modeleRam = new HashMap<>();
-        modeleRam.put("RAM A", 300.0);
-        modeleRam.put("RAM B", 350.0);
-        modeleRam.put("RAM C", 400.0);
-        modeleRam.put("RAM D", 280.0);
-        modeleRam.put("RAM E", 320.0);
+        modeleRam.put("Kingston FURY 32GB (2x16GB) 3200MHz", 339.0);
+        modeleRam.put("GOODRAM 16GB (2x8GB) 3200MHz", 189.0);
+        modeleRam.put("Patriot 16GB (2x8GB) 3200MHz", 219.0);
+        modeleRam.put("Kingston FURY 32GB (2x16GB) 5600MHz", 549.0);
+        modeleRam.put("Patriot 32GB (2x16GB) 6000MHz", 569.0);
         return modeleRam;
     }
 
     private static Map<String, Double> przygotujModeleKartGraficznych() {
         Map<String, Double> modeleKartGraficznych = new HashMap<>();
-        modeleKartGraficznych.put("Karta A", 800.0);
-        modeleKartGraficznych.put("Karta B", 850.0);
-        modeleKartGraficznych.put("Karta C", 900.0);
-        modeleKartGraficznych.put("Karta D", 750.0);
-        modeleKartGraficznych.put("Karta E", 820.0);
+        modeleKartGraficznych.put("Gigabyte GeForce RTX 3060 GAMING OC", 1869.0);
+        modeleKartGraficznych.put("MSI GeForce RTX 4070 GAMING X TRIO", 3449.0);
+        modeleKartGraficznych.put("ASRock Radeon RX 6600 Challenger D", 1229.0);
+        modeleKartGraficznych.put("AMD Radeon RX 6950 XT", 3199.0);
+        modeleKartGraficznych.put("MSI GeForce RTX 4070 Ti VENTUS 3X OC", 4099.0);
         return modeleKartGraficznych;
     }
 
     private static Map<String, Double> przygotujModeleDyskow() {
         Map<String, Double> modeleDyskow = new HashMap<>();
-        modeleDyskow.put("Dysk A", 200.0);
-        modeleDyskow.put("Dysk B", 220.0);
-        modeleDyskow.put("Dysk C", 180.0);
-        modeleDyskow.put("Dysk D", 240.0);
-        modeleDyskow.put("Dysk E", 210.0);
+        modeleDyskow.put("Lexar 1TB M.2 PCIe NVMe NM620", 213.0);
+        modeleDyskow.put("Samsung 1TB M.2 PCIe Gen4 NVMe 980 PRO", 399.0);
+        modeleDyskow.put("Kingston 1TB M.2 PCIe Gen4 NVMe KC3000", 349.0);
+        modeleDyskow.put("GOODRAM 1TB SATA SSD CX400", 209.0);
+        modeleDyskow.put("KIOXIA 480GB SATA SSD EXCERIA", 112.0);
         return modeleDyskow;
     }
 
     private static Map<String, Double> przygotujModeleObudow() {
         Map<String, Double> modeleObudow = new HashMap<>();
-        modeleObudow.put("Obudowa A", 150.0);
-        modeleObudow.put("Obudowa B", 180.0);
-        modeleObudow.put("Obudowa C", 200.0);
-        modeleObudow.put("Obudowa D", 130.0);
-        modeleObudow.put("Obudowa E", 160.0);
+        modeleObudow.put("Logic ATOS ARGB", 189.0);
+        modeleObudow.put("ENDORFY Signum 300 ARGB", 369.0);
+        modeleObudow.put("be quiet! Pure Base 500DX Black", 599.0);
+        modeleObudow.put("Zalman S2", 219.0);
+        modeleObudow.put("Corsair 4000D Airflow Biała", 479.0);
         return modeleObudow;
     }
 
     private static Map<String, Double> przygotujModeleZasilaczy() {
         Map<String, Double> modeleZasilaczy = new HashMap<>();
-        modeleZasilaczy.put("Zasilacz A", 180.0);
-        modeleZasilaczy.put("Zasilacz B", 200.0);
-        modeleZasilaczy.put("Zasilacz C", 220.0);
-        modeleZasilaczy.put("Zasilacz D", 160.0);
-        modeleZasilaczy.put("Zasilacz E", 190.0);
+        modeleZasilaczy.put("ENDORFY Supremo FM5 750W 80 Plus Gold", 499.0);
+        modeleZasilaczy.put("Cooler Master MWE GOLD-V2 750W 80 Plus Gold", 449.0);
+        modeleZasilaczy.put("be quiet! Pure Power 12 M 750W 80 Plus Gold", 559.0);
+        modeleZasilaczy.put("Corsair RM1000x 1000W 80 Plus Gold", 899.0);
+        modeleZasilaczy.put("Gigabyte Aorus 750W 80 Plus Gold", 549.0);
         return modeleZasilaczy;
     }
 }
